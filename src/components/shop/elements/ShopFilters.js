@@ -125,11 +125,18 @@ const ShopFilters = (props) => {
   } = useQuery(querygql, {
     variables: variables,
   });
-
+  const [minprice, setMinprice] = useState(0);
+  const [maxprice, setMaxprice] = useState(0);
   const [categoryLimit, setCategoryLimit] = useState(10);
   const [vendorLimit, setVendorLimit] = useState(10);
   const [priceLimit, setPriceLimit] = useState(10);
   const [selected, setSelected] = useState("");
+
+  const submitForm = () => {
+    console.log(minprice, maxprice);
+    setMinprice(0);
+    setMaxprice(0);
+  };
 
   const filterByHandler = (e) => {
     e.preventDefault();
@@ -145,6 +152,7 @@ const ShopFilters = (props) => {
     });
     getFilterParam(target.dataset.filtertype, target.dataset.filtervalue);
   };
+
   const handlegender = (gender) => {
     setSelected(gender);
     if (gender.length == 1 && gender) {
@@ -365,14 +373,6 @@ const ShopFilters = (props) => {
             }
           })}
         </ul>
-        {/* {categories.length > categoryLimit && (
-          <button
-            className="btn-link-02"
-            // onClick={() => setCategoryLimit((prevState) => prevState + 5)}
-          >
-            + More
-          </button>
-        )} */}
       </ShopWidget>
 
       <ShopWidget title="PRODUCT TYPE">
@@ -544,6 +544,38 @@ const ShopFilters = (props) => {
             + More
           </button>
         )} */}
+      </ShopWidget>
+      {/* /////////////////PRICE//////////////////////// */}
+      <ShopWidget title="BY PRICE">
+        <div class="box">
+          <form>
+            <div className="flex-container">
+              <div class="input-container">
+                <input
+                  type="number"
+                  value={minprice}
+                  name="min"
+                  onChange={(e) => setMinprice(e.target.value)}
+                  required
+                />
+                <label>Min</label>
+              </div>
+              <div class="input-container">
+                <input
+                  type="number"
+                  name="max"
+                  value={maxprice}
+                  onChange={(e) => setMaxprice(e.target.value)}
+                  required
+                />
+                <label>Max</label>
+              </div>
+            </div>
+            <button type="button" class="btn" onClick={submitForm}>
+              Search
+            </button>
+          </form>
+        </div>
       </ShopWidget>
     </Fragment>
   );

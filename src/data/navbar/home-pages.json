@@ -318,30 +318,30 @@
   },
   {
     "id": 2,
-    "text": "SHOP",
+    "text": "ELECTRONICS",
     "link": "/shop",
     "submenu": [
       {
         "id": 2.1,
-        "title": "SHOP PAGES",
+        "title": "Mobile Phones",
         "lists": [
           {
-            "text": "Listing Not Sidebar",
+            "text": "Nokia Mobiles",
             "link": "/shop",
             "badge": null
           },
           {
-            "text": "Listing With Left Sidebar",
+            "text": "Apple iPhones",
             "link": "/shop/left-sidebar",
             "badge": null
           },
           {
-            "text": "Listing With Right Sidebar",
+            "text": "Xiaomi Mi Mobiles",
             "link": "/shop/right-sidebar",
             "badge": null
           },
           {
-            "text": "Listing Not Sidebar Full Width",
+            "text": "Redmi Mobiles",
             "link": "/shop/full-width",
             "badge": null
           }
@@ -349,10 +349,20 @@
       },
       {
         "id": 2.2,
-        "title": "PRODUCT DETAILS",
+        "title": "Laptops",
         "lists": [
           {
-            "text": "Product Details Standard",
+            "text": "Gaming Laptops",
+            "link": "/shop/relaxed-fit-cotton-shirt",
+            "badge": null
+          },
+          {
+            "text": "Refurbished Laptops",
+            "link": "/shop/relaxed-fit-cotton-shirt",
+            "badge": null
+          },
+          {
+            "text": "Traditional Laptops",
             "link": "/shop/relaxed-fit-cotton-shirt",
             "badge": null
           }
@@ -360,20 +370,20 @@
       },
       {
         "id": 2.3,
-        "title": "OTHER PAGES",
+        "title": "Appliances",
         "lists": [
           {
-            "text": "Cart",
+            "text": "Refrigerators",
             "link": "/cart",
             "badge": null
           },
           {
-            "text": "Compare",
+            "text": "Air Conditioner",
             "link": "/compare",
             "badge": null
           },
           {
-            "text": "Wishlist",
+            "text": "Air Cooler",
             "link": "/wishlist",
             "badge": null
           }
@@ -385,20 +395,25 @@
   },
   {
     "id": 3,
-    "text": "BLOG",
+    "text": "MENS",
     "link": "/blog",
     "submenu": [
       {
         "id": 3.1,
-        "title": "BLOG STYLES",
+        "title": "Clothing",
         "lists": [
           {
-            "text": "Blog Standard",
+            "text": "Casual Shirts",
             "link": "/blog",
             "badge": null
           },
           {
-            "text": "Standard Full Width",
+            "text": "Jeans",
+            "link": "/blog/full-width",
+            "badge": null
+          },
+          {
+            "text": "Shorts",
             "link": "/blog/full-width",
             "badge": null
           }
@@ -406,11 +421,42 @@
       },
       {
         "id": 3.2,
-        "title": "POST TYPES",
+        "title": "Accessories",
         "lists": [
           {
-            "text": "Standard Post",
-            "link": "/blog/incididunt-ut-labore-et-dolore",
+            "text": "Belts",
+            "link": "/blog/full-width",
+            "badge": null
+          },
+          {
+            "text": "Sunglasses",
+            "link": "/blog/full-width",
+            "badge": null
+          },
+          {
+            "text": "Hats and Caps",
+            "link": "/blog/full-width",
+            "badge": null
+          }
+        ]
+      },
+      {
+        "id": 3.3,
+        "title": "Foot Wear",
+        "lists": [
+          {
+            "text": "Sneakers",
+            "link": "/blog",
+            "badge": null
+          },
+          {
+            "text": "Formal Shoes",
+            "link": "/blog/full-width",
+            "badge": null
+          },
+          {
+            "text": "Boots",
+            "link": "/blog/full-width",
             "badge": null
           }
         ]
@@ -418,56 +464,71 @@
     ],
     "mega_menu": false
   },
-  {
-    "id": 4,
-    "text": "PORTFOLIO",
-    "link": "/portfolio",
-    "submenu": false,
-    "mega_menu": false,
-    "promo": false
-  },
+
   {
     "id": 5,
-    "text": "PAGES",
+    "text": "WOMENS",
     "link": "/",
     "submenu": [
       {
-        "id": 5.1,
-        "title": "PAGES",
+        "id": 3.1,
+        "title": "Clothing",
         "lists": [
           {
-            "text": "About",
-            "link": "/about",
+            "text": "Sarees",
+            "link": "/blog",
             "badge": null
           },
           {
-            "text": "Contact",
-            "link": "/contact",
+            "text": "Shalwar Kameez",
+            "link": "/blog/full-width",
             "badge": null
           },
           {
-            "text": "Register",
-            "link": "/account/register",
+            "text": "Abayas & Hijabs",
+            "link": "/blog/full-width",
+            "badge": null
+          }
+        ]
+      },
+      {
+        "id": 3.2,
+        "title": "Accessories",
+        "lists": [
+          {
+            "text": "Clutches",
+            "link": "/blog/full-width",
             "badge": null
           },
           {
-            "text": "Login",
-            "link": "/account/login",
+            "text": "Wallets & Accessories",
+            "link": "/blog/full-width",
             "badge": null
           },
           {
-            "text": "FAQ",
-            "link": "/faq",
+            "text": "Smart Watches",
+            "link": "/blog/full-width",
+            "badge": null
+          }
+        ]
+      },
+      {
+        "id": 3.3,
+        "title": "Foot Wear",
+        "lists": [
+          {
+            "text": "Sandals",
+            "link": "/blog",
             "badge": null
           },
           {
-            "text": "Page 404",
-            "link": "/404",
+            "text": "Khussa & Kohlapuri",
+            "link": "/blog/full-width",
             "badge": null
           },
           {
-            "text": "Typography",
-            "link": "/",
+            "text": "Heels",
+            "link": "/blog/full-width",
             "badge": null
           }
         ]

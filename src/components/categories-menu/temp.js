@@ -18,7 +18,9 @@ import SpecialOffers from "@assets/images/svg/special-offers.svg";
 const CategoriesMenu = ({ className, initialVisibility }) => {
   const [dropdownToggle, setDropdownToggle] = useState(initialVisibility);
   const router = useRouter();
-  const productype = "trouser";
+  const handlemobiles = (e) => {
+    console.log(e.target.value);
+  };
   const onToggleHandler = () => {
     setDropdownToggle((prevState) => !prevState);
   };
@@ -36,7 +38,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
           <ul>
             {/* ////////////////ELECTRONIC-DEVICES///////////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <WomenIcon />
                   <span>Electronic Devices</span>
@@ -44,18 +46,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Smart Phones
@@ -63,10 +66,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </Link>
                       <ul
                         className="tt-megamenu-submenu"
-                        style={{ marginLeft: "65%", height: "500px"}}
+                        style={{ marginLeft: "32%", height: "420px" }}
                       >
-                        <li>
-                          <Link href="/shop/left-sidebar">
+                        <li
+                          onClick={(e) => {
+                            console.log(e.target.value);
+                          }}
+                        >
+                          <Link href="">
                             <a
                               style={{
                                 fontSize: "15px",
@@ -362,13 +369,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Feature Phones
@@ -377,8 +385,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-25%",
                         }}
                       >
@@ -399,13 +407,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Tablets
@@ -414,8 +423,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-55%",
                         }}
                       >
@@ -492,13 +501,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "10px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Laptops
@@ -507,8 +517,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-80%",
                         }}
                       >
@@ -599,13 +609,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Desktops
@@ -614,8 +625,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-110%",
                         }}
                       >
@@ -664,13 +675,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Smart Watches
@@ -679,8 +691,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-135%",
                         }}
                       >
@@ -701,13 +713,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Gaming Consoles
@@ -716,8 +729,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-160%",
                         }}
                       >
@@ -794,13 +807,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Cameras & Drones
@@ -809,8 +823,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-190%",
                         }}
                       >
@@ -887,13 +901,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "10px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Security Cameras
@@ -902,8 +917,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-210%",
                         }}
                       >
@@ -924,13 +939,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "130%",
                           }}
                         >
                           Apple
@@ -939,8 +955,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "65%",
-                          height: "500px",
+                          marginLeft: "32%",
+                          height: "420px",
                           marginTop: "-245%",
                         }}
                       >
@@ -1009,7 +1025,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
             </li>
             {/* ////////////ELECTRONIC-ACCESORIES//////////////////////?? */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>Electronic Accessories</span>
@@ -1017,18 +1033,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Mobile Accessories
@@ -1036,7 +1053,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </Link>
                       <ul
                         className="tt-megamenu-submenu"
-                        style={{ marginLeft: "31%", height: "500px" }}
+                        style={{ marginLeft: "5%", height: "420px" }}
                       >
                         <li>
                           <Link href="/shop/left-sidebar">
@@ -1279,13 +1296,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Headphones & Headsets
@@ -1294,8 +1312,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "31%",
-                          height: "500px",
+                          marginLeft: "5%",
+                          height: "420px",
                           marginTop: "-20%",
                         }}
                       >
@@ -1400,13 +1418,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Camera Accessories
@@ -1415,8 +1434,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "31%",
-                          height: "500px",
+                          marginLeft: "5%",
+                          height: "420px",
                           marginTop: "-45%",
                         }}
                       >
@@ -1731,13 +1750,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Computer Accessories
@@ -1746,8 +1766,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "31%",
-                          height: "500px",
+                          marginLeft: "5%",
+                          height: "420px",
                           marginTop: "-70%",
                         }}
                       >
@@ -2118,13 +2138,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Storage
@@ -2133,8 +2154,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "31%",
-                          height: "500px",
+                          marginLeft: "5%",
+                          height: "420px",
                           marginTop: "-90%",
                         }}
                       >
@@ -2211,13 +2232,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Computer Components
@@ -2226,8 +2248,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "31%",
-                          height: "500px",
+                          marginLeft: "5%",
+                          height: "420px",
                           marginTop: "-110%",
                         }}
                       >
@@ -2304,13 +2326,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Portable Speakers
@@ -2319,8 +2342,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "31%",
-                          height: "500px",
+                          marginLeft: "5%",
+                          height: "420px",
                           marginTop: "-130%",
                         }}
                       >
@@ -2346,7 +2369,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
             </li>
             {/* /////////////////HEALTH & BEAUTY////////////////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>Health & Beauty</span>
@@ -2354,18 +2377,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "170%",
                           }}
                         >
                           Bath & Body
@@ -2374,8 +2398,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "121%",
-                          height: "500px",
+                          marginLeft: "76%",
+                          height: "420px",
                         }}
                       >
                         <li>
@@ -2507,13 +2531,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "170%",
                           }}
                         >
                           Fragrances
@@ -2522,8 +2547,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "121%",
-                          height: "500px",
+                          marginLeft: "76%",
+                          height: "420px",
                           marginTop: "-35%",
                         }}
                       >
@@ -2572,13 +2597,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "170%",
                           }}
                         >
                           Hair Care
@@ -2587,8 +2613,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "121%",
-                          height: "500px",
+                          marginLeft: "76%",
+                          height: "420px",
                           marginTop: "-80%",
                         }}
                       >
@@ -2721,13 +2747,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "170%",
                           }}
                         >
                           Makeup
@@ -2736,8 +2763,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "121%",
-                          height: "500px",
+                          marginLeft: "76%",
+                          height: "420px",
                           marginTop: "-110%",
                         }}
                       >
@@ -2870,13 +2897,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "170%",
                           }}
                         >
                           Men's Care
@@ -2885,8 +2913,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "121%",
-                          height: "500px",
+                          marginLeft: "76%",
+                          height: "420px",
                           marginTop: "-145%",
                         }}
                       >
@@ -2963,13 +2991,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "170%",
                           }}
                         >
                           Skin Care
@@ -2978,8 +3007,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "121%",
-                          height: "500px",
+                          marginLeft: "76%",
+                          height: "420px",
                           marginTop: "-180%",
                         }}
                       >
@@ -3117,7 +3146,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
             </li>
             {/* ////////////////WOMENS FASHION//////////////////////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>Women's Fashion</span>
@@ -3125,18 +3154,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Unstitched Fabric
@@ -3145,8 +3175,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                         }}
                       >
                         <li>
@@ -3180,13 +3210,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Kurtas & Shalwar Kameez
@@ -3195,8 +3226,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-23%",
                         }}
                       >
@@ -3259,13 +3290,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Muslim Wear
@@ -3274,8 +3306,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-43%",
                         }}
                       >
@@ -3338,13 +3370,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Tops
@@ -3353,8 +3386,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-63%",
                         }}
                       >
@@ -3403,13 +3436,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Pants, Jeans & Leggings
@@ -3418,8 +3452,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-83%",
                         }}
                       >
@@ -3496,13 +3530,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Winter Clothing
@@ -3511,8 +3546,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-103%",
                         }}
                       >
@@ -3589,13 +3624,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Shoes
@@ -3604,8 +3640,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-123%",
                         }}
                       >
@@ -3743,7 +3779,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
             </li>
             {/* /////////////MENS FASHION////////////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>Men's Fashion</span>
@@ -3751,18 +3787,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           T-Shirts & Tanks
@@ -3771,8 +3808,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                         }}
                       >
                         <li>
@@ -3834,13 +3871,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Shirts & Polo
@@ -3849,8 +3887,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-23%",
                         }}
                       >
@@ -3899,13 +3937,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Pants & Jeans
@@ -3914,8 +3953,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-43%",
                         }}
                       >
@@ -3964,13 +4003,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Shorts, Joggers & Sweats
@@ -3979,8 +4019,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-63%",
                         }}
                       >
@@ -4015,13 +4055,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Kurtas & Shalwar Kameez
@@ -4030,8 +4071,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-83%",
                         }}
                       >
@@ -4094,13 +4135,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Winter Clothing
@@ -4109,8 +4151,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-103%",
                         }}
                       >
@@ -4159,13 +4201,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Inner Wear
@@ -4174,8 +4217,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-123%",
                         }}
                       >
@@ -4266,13 +4309,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Shoes
@@ -4281,8 +4325,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-143%",
                         }}
                       >
@@ -4387,13 +4431,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Men's Accessories
@@ -4402,8 +4447,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "27%",
-                          height: "500px",
+                          marginLeft: "1%",
+                          height: "420px",
                           marginTop: "-163%",
                         }}
                       >
@@ -4471,7 +4516,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
             </li>
             {/* /////////////////TV & Home Appliances//////////////////////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>TV & Home Appliances</span>
@@ -4479,18 +4524,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           LED Televisions
@@ -4499,8 +4545,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                         }}
                       >
                         <li>
@@ -4520,13 +4566,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Smart Televisions
@@ -4535,8 +4582,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-25%",
                         }}
                       >
@@ -4599,13 +4646,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Home Audio
@@ -4614,8 +4662,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-40%",
                         }}
                       >
@@ -4678,13 +4726,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           TV Accessories
@@ -4693,8 +4742,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-63%",
                         }}
                       >
@@ -4729,13 +4778,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           TV Adapters
@@ -4744,8 +4794,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-85%",
                         }}
                       >
@@ -4808,13 +4858,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Home Audio & Theater
@@ -4823,8 +4874,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-105%",
                         }}
                       >
@@ -4915,13 +4966,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Kitchen Appliances
@@ -4930,8 +4982,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-129%",
                         }}
                       >
@@ -5050,13 +5102,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Small Kitchen Appliances
@@ -5065,8 +5118,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-149%",
                         }}
                       >
@@ -5185,13 +5238,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Cooling & Heating
@@ -5200,8 +5254,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-169%",
                         }}
                       >
@@ -5306,13 +5360,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "100%",
                           }}
                         >
                           Irons & Garment Care
@@ -5321,8 +5376,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "29%",
-                          height: "500px",
+                          marginLeft: "3%",
+                          height: "420px",
                           marginTop: "-189%",
                         }}
                       >
@@ -5521,7 +5576,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
 
             {/* ///////////////Sports & Outdoor//////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>Sports & Outdoor</span>
@@ -5529,18 +5584,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "165%",
                           }}
                         >
                           Supplements
@@ -5549,8 +5605,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "114%",
-                          height: "500px",
+                          marginLeft: "70%",
+                          height: "420px",
                         }}
                       >
                         <li>
@@ -5612,13 +5668,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "165%",
                           }}
                         >
                           Team Sports
@@ -5627,8 +5684,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "114%",
-                          height: "500px",
+                          marginLeft: "70%",
+                          height: "420px",
                           marginTop: "-40%",
                         }}
                       >
@@ -5724,7 +5781,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
             </li>
             {/* //////////////Watches, Bags & Jewellery////////////////////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>Watches,Bags & Jewellery</span>
@@ -5732,18 +5789,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "110%",
                           }}
                         >
                           Men's Watches
@@ -5752,8 +5810,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "43%",
-                          height: "500px",
+                          marginLeft: "14%",
+                          height: "420px",
                         }}
                       >
                         <li>
@@ -5843,13 +5901,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "110%",
                           }}
                         >
                           Women's Watches
@@ -5858,9 +5917,9 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "43%",
-                          height: "500px",
-                          marginTop: "-31%",
+                          marginLeft: "14%",
+                          height: "420px",
+                          marginTop: "-27%",
                         }}
                       >
                         <li>
@@ -5950,13 +6009,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "110%",
                           }}
                         >
                           Womens Bags
@@ -5965,8 +6025,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "43%",
-                          height: "500px",
+                          marginLeft: "14%",
+                          height: "420px",
                           marginTop: "-51%",
                         }}
                       >
@@ -6071,13 +6131,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "110%",
                           }}
                         >
                           Mens Bags
@@ -6086,8 +6147,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "43%",
-                          height: "500px",
+                          marginLeft: "14%",
+                          height: "420px",
                           marginTop: "-71%",
                         }}
                       >
@@ -6192,13 +6253,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "110%",
                           }}
                         >
                           Sunglasses & Eyewear
@@ -6207,8 +6269,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "43%",
-                          height: "500px",
+                          marginLeft: "14%",
+                          height: "420px",
                           marginTop: "-91%",
                         }}
                       >
@@ -6290,7 +6352,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
             </li>
             {/* //////////////Automative//////////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>Automotive</span>
@@ -6298,18 +6360,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "115%",
                           }}
                         >
                           Car Accessories
@@ -6318,8 +6381,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "48%",
-                          height: "500px",
+                          marginLeft: "18%",
+                          height: "420px",
                         }}
                       >
                         <li>
@@ -6437,13 +6500,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "115%",
                           }}
                         >
                           Car Parts & Spares
@@ -6452,8 +6516,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "48%",
-                          height: "500px",
+                          marginLeft: "18%",
+                          height: "420px",
                           marginTop: "-23%",
                         }}
                       >
@@ -6516,13 +6580,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "115%",
                           }}
                         >
                           Car Care
@@ -6531,8 +6596,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "48%",
-                          height: "500px",
+                          marginLeft: "18%",
+                          height: "420px",
                           marginTop: "-49%",
                         }}
                       >
@@ -6609,13 +6674,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "115%",
                           }}
                         >
                           Car Safety & Security
@@ -6624,8 +6690,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "48%",
-                          height: "500px",
+                          marginLeft: "18%",
+                          height: "420px",
                           marginTop: "-73%",
                         }}
                       >
@@ -6651,7 +6717,7 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
             </li>
             {/* ////////////////health-and-care////////////////// */}
             <li className="tt-submenu">
-              <Link href="/product/category/women">
+              <Link href="">
                 <a>
                   <Accessories />
                   <span>Health & Care</span>
@@ -6659,18 +6725,19 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
               </Link>
               <div
                 className="dropdown-menu size-md "
-                style={{ width: "250px", height: "100%" }}
+                style={{ width: "200px", height: "100%" }}
               >
                 <div className="dropdown-menu-wrapper p-0">
                   <ul className="tt-megamenu-submenu">
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "120%",
                           }}
                         >
                           Medical Equipment
@@ -6679,8 +6746,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "54%",
-                          height: "500px",
+                          marginLeft: "23%",
+                          height: "420px",
                         }}
                       >
                         <li>
@@ -6784,13 +6851,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "120%",
                           }}
                         >
                           Medical Accessories
@@ -6799,8 +6867,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "54%",
-                          height: "500px",
+                          marginLeft: "23%",
+                          height: "420px",
                           marginTop: "-24%",
                         }}
                       >
@@ -6905,13 +6973,14 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/shop/left-sidebar">
+                      <Link href="">
                         <a
                           style={{
                             fontSize: "15px",
                             paddingBottom: "8px",
                             paddingTop: "10px",
                             paddingLeft: "5px",
+                            width: "120%",
                           }}
                         >
                           Drugs
@@ -6920,8 +6989,8 @@ const CategoriesMenu = ({ className, initialVisibility }) => {
                       <ul
                         className="tt-megamenu-submenu"
                         style={{
-                          marginLeft: "54%",
-                          height: "500px",
+                          marginLeft: "23%",
+                          height: "420px",
                           marginTop: "-55%",
                         }}
                       >

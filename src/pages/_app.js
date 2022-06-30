@@ -12,6 +12,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "../components/cards/cards.css";
 import "../components/slider/SliderOne.css";
 import "../components/categories-menu/temp.css";
+import "../components/collectioncards/CollectionCards.css";
+import "../components/shop/elements/Shop.css"
 
 const Wokiee = ({ Component, pageProps }) => {
   return (

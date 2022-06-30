@@ -43,12 +43,12 @@ const HomeFour = ({
         />
         <Brands />
         <Tending products={productsFashion} data={topdiscounted?.hits?.hits} />
+        <h2 style={{ paddingTop: "40px", textAlign: "center" }}>Collections</h2>
+        <Collectioncards />
         <h2 style={{ paddingTop: "40px", textAlign: "center" }}>Top Brands</h2>
         <Card
           smallcardData={aggregationbyProductType?.aggregations?.langs?.buckets}
         />
-        <h2 style={{ paddingTop: "40px", textAlign: "center" }}>Collections</h2>
-        <Collectioncards />
       </ContentWrapper>
 
       <Footer logo={logo} />
